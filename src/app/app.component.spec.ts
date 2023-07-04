@@ -15,13 +15,13 @@ describe('AppComponent', () => {
   it(`should have as title 'gerenciador-de-tarefas'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gerenciador-de-tarefas');
+    expect(app.title).toEqual('Gerenciador de tarefas');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('gerenciador-de-tarefas app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Gerenciador de tarefas app is running!');
   });
 });
